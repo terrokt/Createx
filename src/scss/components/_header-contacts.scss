@@ -1,0 +1,39 @@
+.header-contacts {
+  @include flex-v-center;
+
+  &__link {
+    @include flex-collumn-start;
+  }
+}
+
+.contacts-link {
+  padding-left: 52px;
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: 40px 40px;
+  color: inherit;
+  
+  &:not(:last-child){
+    margin-right: 36px;
+  }
+
+  &__caption {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 150%;
+  }
+
+  &__value {
+    font-weight: 400l;
+    font-size: 18px;
+    line-height: 150%;
+    color: var(--darkgray-color);
+  }
+
+  &--call{
+    background-image: url("../img/phone.svg");
+  }
+  &--send{
+    background-image: url("../img/Chat.svg");
+  }
+}
